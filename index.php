@@ -74,7 +74,7 @@
 	</form>
 
 	<?php
-		if (empty($error)) {
+		if (empty($error) && !empty($data["first_name"])) {
 			echo "<div class = 'success'>";
 			echo "Form send successfully<br/><br/>";
 			foreach($data as $key => $value){
